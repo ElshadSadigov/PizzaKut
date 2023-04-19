@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.encouragement{
+    background-image: url("./EncouragementImg/PizzaBg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 450px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding: 4rem 0;
+}
+
+.encouragementText{
+    width: 70%;
+    text-align: center;
+    font-size: 30px;
+}
+.encouragementText p{
+    margin: 10px 0;
+    color: red;
+    font-family: 'Courgette', cursive;
+}
+.encouragementText span{
+    color: yellow;
+    font-family: 'Handlee', cursive;
+} 
+@media screen and (max-width: 992px) {
+    .encouragement{
+        padding: 4rem 2rem;
+    }
+    .encouragementText{
+        width: 50%;
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .encouragement{
+        align-items: flex-start;
+        padding: 7rem 2rem;
+    }
+    .encouragementText {
+        font-size: 20px;
+    }
+}

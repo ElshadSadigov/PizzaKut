@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.advertisement{
+    margin: 6rem auto 3rem;
+    width: 75%;
+    height: 230px;
+    overflow: hidden;
+    border-radius: 60px 0 60px 0;
+    border: 2px solid red;
+    transition: 300ms all;
+}
+.advertisement video{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+@media screen and (max-width: 768px) {
+    .advertisement{
+        width: 85%;
+        height: 180px;
+    }
+}

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Tillana&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer{
+    background-image: url('./FooterImg//FooterImg.jpg');
+    width: 100%;
+    height: 350px;
+    padding: 0 5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: aliceblue;
+}
+
+.sosial{
+    width: 200px;
+    border-bottom: 2px solid red;
+    display: flex;
+    padding: 5px 0;
+    justify-content: center;
+}
+
+.sosial a{
+    color: #fff;
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: 500ms all;
+}
+.sosial a:hover{
+    background-color: red;
+}
+.sosial i{
+    font-size: 22px;        
+}
+
+.footerLogo{
+    margin: 1rem 0 0;
+}
+.footerLogo span{
+    font-size: 42px;
+    font-family: 'Felipa', cursive;
+}
+.footerLogo span:nth-child(1){
+    color: red
+}
+.footerLogo span:nth-child(2){
+    color: yellow;
+}
+.footerLogo span:nth-child(3){
+    font-weight: bolder;
+    color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+    .footer{
+        height: 300px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .footer{
+        height: 270px;
+        padding: 0 2rem;
+    }
+}

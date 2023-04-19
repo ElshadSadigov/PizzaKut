@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu{
+    padding: 4rem 0 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuTitle{
+    text-align: center;
+}
+.menuTitle span{
+    font-size: 22px;
+    color: red;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+}
+.menuTitle p{
+    margin: 10px 0 40px;
+    color: #fff;
+    font-family: 'Great Vibes', cursive;
+    font-size: 28px;
+}
+
+.menuCards{
+    max-width: 100%;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 3rem 3rem;
+    padding: 0 1.5rem;
+}
+@media screen and (max-width: 992px) {
+   .menuCards{
+    grid-template-columns: repeat(3, 1fr);
+   } 
+}
+@media screen and (max-width: 768px) {
+    .menuCards{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+        padding: 0 2rem;
+    }
+}

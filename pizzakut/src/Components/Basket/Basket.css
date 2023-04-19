@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.basket {
+    width: 70%;
+    padding: 6rem 0 4rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.basketTitle {
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.basketTitle span {
+    font-size: 30px;
+    padding: 5px 25px;
+    background-color: red;
+    border-radius: 25px;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.basketBack {
+    width: 100%;
+    margin: 1rem 0 0;
+}
+
+.basketBack a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    transition: 500ms all;
+}
+
+.basketBack i {
+    font-size: 16px;
+    margin: 0 3px;
+}
+
+.basketBack a:hover {
+    color: red;
+}
+
+.basketBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 2rem 0;
+}
+
+.basketProducts {
+    max-height: 350px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px 0 0 25px;
+    border: 1px solid red;
+    border-right: 0;
+    overflow: auto;
+    padding: 1rem 1.5rem;
+    background-color: rgb(60, 59, 59);
+}
+
+.basketProducts::-webkit-scrollbar {
+    background: none;
+    width: 1px;
+}
+
+.basketProducts::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: red;
+
+}
+
+.basketProduct {
+    display: flex;
+    margin: 0 0 1.5rem 0;
+}
+
+.productInfo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 0 0 1.5rem;
+}
+
+.productTitle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.productTitle span {
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fff;
+    font-weight: 700;
+}
+
+.productCount {
+    display: flex;
+    align-items: center;
+}
+
+.productSize {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pizzaPrice {
+    padding: 1rem 0 0;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.productCount button {
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 0;
+    transition: 500ms all;
+}
+
+.productCount button:hover {
+    background-color: red;
+    color: #fff;
+}
+
+.productCount button:nth-child(1) {
+    padding: 0 0 5px;
+    font-size: 35px;
+}
+
+.productCount span {
+    width: 50px;
+    text-align: center;
+    background: none;
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.productRemove {
+    margin: 0 0.5rem 0.7rem;
+    cursor: pointer;
+}
+
+.productRemove i {
+    font-size: 25px;
+    color: #fff;
+    transition: 500ms all;
+}
+
+.productRemove i:hover {
+    color: red;
+}
+
+.productImg {
+    width: 150px;
+    height: auto;
+    background-color: aliceblue;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.productImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.basketEnd {
+    width: 25%;
+    background-color: rgb(60, 59, 59);
+    border-radius: 15px;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.basketEnd span {
+    margin: 5px 0;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Tillana', cursive;
+    display: flex;
+    align-items: center;
+}
+
+.basketEnd i {
+    color: yellow;
+    margin: 0 0 2px 3px;
+}
+
+.basketEnd button {
+    margin: 15px 0 0;
+    border-radius: 8px;
+    border: 0;
+    padding: 8px 35px;
+    cursor: pointer;
+    font-size: 18px;
+    color: red;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: 600ms all;
+}
+
+.basketEnd button:hover {
+    background-color: red;
+    color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+    .basket {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .basketBox {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .basketProducts {
+        width: 100%;
+
+        max-height: 300px;
+    }
+
+    .basketEnd {
+        width: 50%;
+        margin: 2rem 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .basketEnd {
+        width: 70%;
+    }
+
+    .basketProducts {
+        padding: 0.5rem;
+    }
+
+    .productImg {
+        width: 100px;
+        height: 100px;
+        margin: auto;
+    }
+
+    .productTitle span {
+        font-size: 18px;
+    }
+
+    .productCount span {
+        width: 40px;
+    }
+
+    ;
+}

@@ -1,0 +1,13 @@
+body{
+  background-color: #222;  
+}
+html::-webkit-scrollbar {
+  background: none;
+  width: 7px;
+}
+
+html::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background-color: yellow;
+
+}

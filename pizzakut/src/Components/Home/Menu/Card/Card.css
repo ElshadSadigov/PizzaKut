@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem 2rem;
+}
+.cardBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    overflow: hidden;
+    border-radius: 15px;
+    padding: 1rem 0 0;
+    background-color: rgb(60, 59, 59);
+    border: 1px solid red;
+}
+.cardImg {
+    padding: 0 1rem;
+}
+.cardImg:hover img{
+    transform: rotate(90deg);
+}
+.cardImg img{
+    max-width: 170px;
+    height: 170px;
+    transition: 500ms all;
+}
+.cardTitle{
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10px;
+}
+.cardTitle span{
+    font-family: 'Crete Round', serif;
+    font-weight: 700;
+    color: red;
+}
+.cardTitle i{
+    margin: 0 5px;
+}
+
+.cardBtn{
+    width: 100%;
+}
+.cardBtn button{
+    width: 100%;
+    padding: 10px 0;
+    border: 0;
+    cursor: pointer;
+    background-color: red;
+    color: #fff;
+    transition: 500ms all;
+}
+.cardInfo{
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 0; 
+}
+.cardInfo span{
+    color: red;
+    font-family: 'Tillana', cursive;
+}
+.cardInfo p{
+    width: 90%;
+    font-family: 'Great Vibes', cursive;
+    font-size: 14px;
+    font-weight: lighter;
+    color: #fff;
+}
+.cardBtn button:hover{
+    background-color: yellow;
+    color: red;
+}
+
+@media screen and (max-width: 992px) {
+    .card{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width: 768px) {
+    .card{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem 2rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .card{
+        gap: 2rem 1rem;
+    }
+}
